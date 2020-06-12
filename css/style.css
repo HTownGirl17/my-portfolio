@@ -700,6 +700,10 @@ form .error {
   color: #ff0000;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Testimonials Section */
 
 .testimonials {
