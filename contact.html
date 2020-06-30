@@ -97,8 +97,14 @@
         </div>
 
         <div class="form-group col-md-12">
-          <label>Phone Number:</label>
-          <input type="phone" name="phone" placeholder="Enter Your Number" />
+          <label>Phone Number: ###-###-####</label>
+          <input
+            type="tel"
+            pattern="^\d{3}-\d{3}-\d{4}$"
+            name="phone"
+            class="required customphone"
+            placeholder="Enter Your Number"
+          />
         </div>
 
         <div class="form-group col-md-12">
@@ -145,7 +151,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
 
     <!-- Additonal Methods for jQuery Validation plugin -->
-    <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/additional-methods.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/additional-methods.min.js"></script>
 
     <!-- JavaScript -->
     <script src="index.js"></script>
