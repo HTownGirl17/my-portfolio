@@ -1,17 +1,17 @@
 // Form validation
-$.validator.addMethod(
-  "customphone",
-  function (value, element) {
-    return this.optional(element) || /^\d{3}-\d{3}-\d{4}$/.test(value);
-  },
-  "Please enter the phone number in the format shown above"
-);
-
-$.validator.addClassRules("customphone", {
-  customphone: true,
-});
-
 $(document).ready(function () {
+  $.validator.addMethod(
+    "customphone",
+    function (value, element) {
+      return this.optional(element) || /^\d{3}-\d{3}-\d{4}$/.test(value);
+    },
+    "Please enter the phone number in the format shown above"
+  );
+
+  $.validator.addClassRules("customphone", {
+    customphone: true,
+  });
+
   // To make sure only letters in name field are entered
   jQuery.validator.addMethod(
     "lettersonly",
