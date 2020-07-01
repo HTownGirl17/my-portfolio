@@ -312,7 +312,7 @@ header {
   bottom: 6px;
 }
 
-@media (max-width: 375px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .btn-hire-me {
     margin-left: -2em;
   }
