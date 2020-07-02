@@ -1,8 +1,8 @@
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
-} */
+}
 
 /* ff means font family, fw means font weight, clr means color, fs means font size, bs mean box shadow */
 :root {
@@ -580,6 +580,7 @@ header {
   display: grid;
   position: relative;
   transition: 1s all ease-in-out;
+  max-width: 100%;
 }
 
 .card:hover {
