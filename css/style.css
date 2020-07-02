@@ -38,6 +38,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -597,6 +598,10 @@ header {
 
   .card {
     margin-bottom: 1em;
+  }
+  .back,
+  .front {
+    height: 16em;
   }
 }
 
