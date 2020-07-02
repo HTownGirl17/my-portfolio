@@ -590,6 +590,16 @@ header {
   height: 100%;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .work-container {
+    display: block;
+  }
+
+  .card {
+    margin-bottom: 1em;
+  }
+}
+
 /* Footer */
 .footer {
   background: #111;
@@ -801,7 +811,7 @@ blockquote::after {
   transition: 0.5s;
 }
 
-@media (min-width: 375px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .testimonials h1 {
     margin: 0 auto;
   }
